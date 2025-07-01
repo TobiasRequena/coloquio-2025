@@ -34,7 +34,7 @@ export default function Historial() {
   const disabledDate = (current) => current && current > dayjs().endOf('day');
 
   useEffect(() => {
-    const lastView = localStorage.getItem('vistaHistorial') || 'lista';
+    const lastView = localStorage.getItem('vistaHistorial') || 'cuadricula';
     setVista(lastView);
   }, []);
 
